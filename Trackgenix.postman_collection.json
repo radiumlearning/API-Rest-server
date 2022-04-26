@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "c37eebef-bed1-4efa-b83a-4c691acf311a",
+		"name": "Trackgenix",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/signup?name=esteban&lastName=frare&id=3824091&dob=04/10/2022&phone=3464683663&address=laprida 1440&city=3 de febrero&zip=2173&email=esteban@gmail.com&password=est12312312",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"signup"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "esteban"
+						},
+						{
+							"key": "lastName",
+							"value": "frare"
+						},
+						{
+							"key": "id",
+							"value": "3824091"
+						},
+						{
+							"key": "dob",
+							"value": "04/10/2022"
+						},
+						{
+							"key": "phone",
+							"value": "3464683663"
+						},
+						{
+							"key": "address",
+							"value": "laprida 1440"
+						},
+						{
+							"key": "city",
+							"value": "3 de febrero"
+						},
+						{
+							"key": "zip",
+							"value": "2173"
+						},
+						{
+							"key": "email",
+							"value": "esteban@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "est12312312"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/login?email=rose@gmail.com&password=test123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "rose@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "test123"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
