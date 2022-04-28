@@ -87,7 +87,7 @@ app.get('/login',
     if(errors.length) {
       res.status(400).json({ success: false, errors })
     } else {
-      if(req.query.email !== 'rose@gmail.com' || req.query.password !== 'test123') {
+      if(req.query.email !== 'rose@radiumrocket.com' || req.query.password !== 'BaSP2022') {
         res.status(400).json({ success: false, msg: "Wrong username or password" })
       } else {
         res.status(200).json({ success: true, msg: "Employee logged" })
