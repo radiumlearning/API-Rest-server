@@ -38,4 +38,4 @@ El único usuario existente en el servidor es:
 
 
 - email: **rose@radiumrocket.com**
-- password: **BaSP2022**
+- password: **BaSProfessional1**

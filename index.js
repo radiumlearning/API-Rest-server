@@ -61,7 +61,7 @@ app.get('/signup',
   (req, res) => {
     console.log("req.query", req.query)
     const { errors } = validationResult(req)
-    if(errors.length) {
+    if (errors.length) {
       res.status(400).json({ success: false, errors })
     } else {
       res.status(200).json({
@@ -84,10 +84,10 @@ app.get('/login',
     .withMessage('Name must have more than 7 letters'),
   (req, res) => {
     const { errors } = validationResult(req)
-    if(errors.length) {
+    if (errors.length) {
       res.status(400).json({ success: false, errors })
     } else {
-      if(req.query.email !== 'rose@radiumrocket.com' || req.query.password !== 'BaSP2022') {
+      if (req.query.email !== 'rose@radiumrocket.com' || req.query.password !== 'BaSProfessional1') {
         res.status(400).json({ success: false, msg: "Wrong username or password" })
       } else {
         res.status(200).json({ success: true, msg: "Employee logged" })
